@@ -33,9 +33,6 @@
     "kill-serve": "kill -9 `ps -ef |grep SimpleHTTPServer |grep 8888 |awk '{print $2}'` & exit 0",
     "precommit": "npm run lint"
   },
-  "publishConfig": {
-    "registry": "https://www.npmjs.com/org/curriculumassociates"
-  },
   "files": [
     "README.md",
     "src/",
