@@ -1,0 +1,279 @@
+AccentsText: |
+    \begin{array}{l}
+    \text{\'\i} & \text{\.\i} & \text{\`\i} & \text{\"\i} & \text{\H\i} & \text{\r\i} \\
+    \text{\'\j} & \text{\.\j} & \text{\`\j} & \text{\"\j} & \text{\H\j} & \text{\r\j} \\
+    \text{\'a} & \text{\.a} & \text{\`a} & \text{\"a} & \text{\H{a}} & \text{\r{a}} \\
+    \text{\'A} & \text{\.A} & \text{\`A} & \text{\"A} & \text{\H{A}} & \text{\r{A}} \\
+    \text{\.I İ} & \text{\H e e̋} & \text{\i ı}
+    \end{array}
+Aligned: |
+    \begin{aligned}
+        ax+b &= 1 & 4b-6c &= 2 \\
+        3a &= 3 & 17b &= 34
+    \end{aligned}
+Alignedat: |
+    \begin{alignedat}{3}
+        a &= 1 & b &= 2 &\quad c &= 3\\
+        3a &= 3 & 17b &= 34 &\quad 400c &= 1200
+    \end{alignedat}
+Array: |
+  ba\begin{array}{|l|c|r|}
+    \hline
+    left & center & right\\
+    \hline
+    a+b=c & d & e+g+f\\
+    \hline
+  \end{array}ab
+ArrayMode: |
+  \begin{matrix}
+      \frac{\partial^2 f}{\partial x_1^2} & \frac{\partial^2 f}{\partial x_1\,\partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_1\,\partial x_n} \\
+      \frac{\partial^2 f}{\partial x_2\,\partial x_1} & \frac{\partial^2 f}{\partial x_2^2} & \cdots & \frac{\partial^2 f}{\partial x_2\,\partial x_n} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      \frac{\partial^2 f}{\partial x_n\,\partial x_1} & \frac{\partial^2 f}{\partial x_n\,\partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_n^2}
+  \end{matrix}
+ArrayRemoveEmptyLine: |
+    \begin{pmatrix}
+        1 \\
+        2 \\
+    \end{pmatrix}
+ArrayType: 1\begin{array}{c}2\\3\end{array}4
+Baseline: a+b-c\cdot d/e
+BasicMath: 3a+b-c\div4\times6d=x
+BasicFraction: \frac{a}{b}
+BasicTest: a
+BinCancellation: |
+    \begin{array}{cccc}
+        +1 & 1+ & 1+1 & (,) \\
+        1++1 & 3\times) & 1+, & \left(,\right)
+    \end{array}
+BinomTest: \dbinom{a}{b}\tbinom{a}{b}^{\binom{a}{b}+17}
+BoldSpacing: \mathbf{A}^2+\mathbf{B}_3*\mathscr{C}'
+BoldSymbol: |
+  \sum_{\boldsymbol{\alpha}}^{\boldsymbol{\beta}} \boldsymbol{\omega}+ \int_{\boldsymbol{\alpha}}^{\boldsymbol{\beta}} \boldsymbol{\Omega}+\boldsymbol{Ax2k\omega\Omega\imath+} \\
+  x \boldsymbol{+} y \boldsymbol{=} z
+Boxed: a+\boxed{b+\boxed{c}}+\boxed{5x^2}+\boxed{\frac{a}{b\frac{b}{c}}}=\boxed{3}
+Classes: \text{\class{a}{ClassA} \class{b}{ClassB}} \class{c}{a+b}
+ClassesNested: \text{\class{a}{\class{b}{Nested Classes AB}, Not Nested A}}
+ColorBox: a \colorbox{teal} B \fcolorbox{blue}{red}{C} e+\colorbox{teal}x
+Colors: \blue{a}\textcolor{#0f0}{b}\textcolor{red}{c}
+ColorsImplicit: bl{ack\color{red}red\textcolor{green}{green}red\color{blue}blue}black
+ColorSpacing: \textcolor{red}{\displaystyle \int x} + 1
+DashesAndQuotes: |
+    \begin{array}{l}
+        \text{``a'' b---c -- d----`e'-{-}-f} -- \\
+        \text{\it ``a'' b---c -- d----`e'-{-}-f} ``x'' \\
+        \text{\tt ``a''---} \texttt{``a''---} \mathtt{--} \\
+    \end{array}
+DisplayStyle: |
+    {\displaystyle\sqrt{x}}{\sqrt{x}}
+    {\displaystyle \frac12}{\frac12}{\displaystyle x^1_2}{x^1_2}
+Dots: |
+    \begin{array}{l}
+      \cdots;\dots+\dots\int\dots,\dots \\
+      \cdots{};\ldots+\ldots\int\ldots,\ldots
+    \end{array}
+Exponents: ax^2+bx+c+a^{(a^{3a}+3\times4)}a^{a^a_a}_{a^a_a}
+ExtensibleArrows: |
+    \begin{array}{l}
+        \xrightarrow[ab]{ABC} + \xRightarrow{ABC} \\
+        \xrightleftharpoons[ab]{ABC} + \xhookrightarrow[ab]{ABC} \\
+        \xtwoheadrightarrow{ABC} + \frac{\xrightarrow[ab]{ABC}}{\xrightarrow[ab]{ABC}} + \left\lvert\xrightarrow[ab]{ABC}\right\rvert
+    \end{array}
+FColorBox: a \fcolorbox{yellow}{teal} B \fcolorbox{blue}{red}{C} e+\fcolorbox{black}{white}x
+FractionTest: \dfrac{a}{b}\frac{a}{b}\tfrac{a}{b}\;-\dfrac12\;1\tfrac12\;{1 \atop 2}\; \cfrac{1}{1+\cfrac{1}{x}}
+Functions: \sin\cos\tan\ln\log
+Gathered: |
+    \begin{gathered}
+      x = \frac{1}{2} \\
+      y = \sum_{i=1}^n i
+    \end{gathered} \approx
+    \begin{array}{c}
+      x = \frac{1}{2} \\
+      y = \sum_{i=1}^n i
+    \end{array}
+GreekLetters: \alpha\beta\gamma\omega
+GreekUnicode: \frac{αβγδεϵζηθϑικλμνξοπϖρϱςστυφϕχψω}{ΓΔΘΞΠΣΦΨΩ\mathbf{Ω}\mathbf{\Omega}}
+KaTeX: \KaTeX
+Kern: \frac{a\kern{1em}b}{c}a\kern{1em}b\kern{1ex}c\kern{-0.25em}d
+LargeOp: n! = \int_{0}^{\infty} {x^n e^{-x} \,dx}
+LaTeX: \text{\LaTeX}, \text{\TeX}
+LeftRight: \left( x^2 \right) \left\{ x^{x^{x^{x^x}}} \right.
+LeftRightListStyling: a+\left(x+y\right)-x
+LeftRightMiddle: \left( x^2 \middle/ \right) \left\{ x^{x^{x^{x^x}}} \middle/ y \right.\left(x\middle|y\,\middle|\,z\right)
+LineBreak: |
+    \frac{x^2}{y^2} + z^2 =
+    z^2 + \frac{x^2}{y^2} =
+    \frac{x^2}{y^2} +\nobreak z^2 =
+    z^2 + \frac{x^2}{y^2} =
+    \frac{x^2}{y^2} + ~ z^2 =
+    z^2 + \frac{x^2}{y^2} =
+    \frac{x^2}{y^2} + \hspace{1em} z^2 =
+    z^2 + \frac{x^2}{y^2} =
+    \frac{x^2}{y^2} + z^2 = \hspace*{1em}
+    z^2 + \frac{x^2}{y^2} =
+    \frac{x^2}{y^2} + z^2 =
+    hi \allowbreak there =
+    hi \allowbreak there
+LowerAccent: |
+  \begin{matrix}
+    \underleftarrow{AB} \quad \underrightarrow{AB} \quad \underleftrightarrow{AB} \quad \undergroup{AB} \\
+    \underlinesegment{AB} \quad \utilde{AB}  \quad \color{green}{\underrightarrow{AB}} \\
+    \underrightarrow{F} + \underrightarrow{AB} + \underrightarrow{AB}^2 + \underrightarrow{AB}_2 \\
+    \frac{\underrightarrow{AB}}{\underrightarrow{AB}} + \sqrt{\underrightarrow{AB}} + \left\lvert\underrightarrow{AB}\right\rvert \\
+    \text{\underline{text}}
+  \end{matrix}
+MathAtom: a\mathrel{\mathop{=}\limits^{\blue ?}}b
+MathAtom2: \mathop{\overline{\mathrm{lim}}}\limits_{x\to\infty}f(x)
+MathChoice: |
+  {\displaystyle\mathchoice{D}{T}{S}{SS}} {\textstyle\mathchoice{D}{T}{S}{SS}} {\scriptstyle \mathchoice{D}{T}{S}{SS}} {\scriptscriptstyle\mathchoice{D}{T}{S}{SS}} \displaystyle X_{\mathchoice{D}{T}{S}{SS}_{\mathchoice{D}{T}{S}{SS}}}
+MathDefaultFonts: Ax2k\breve{a}\omega\Omega\imath+\KaTeX
+MathFonts: |
+  \begin{matrix}
+    \mathbb{Math AMS Font}\\
+    \mathbf{Math Bold Font}\\
+    \mathcal{Math Caligraphic Font}\\
+    \mathfrak{Math Fraktur Font}\\
+    \mathit{Math Italic Font}\\
+    \mathsf{Math SansSerif Font}\\
+    \mathscr{Math Script Font}\\
+  \end{matrix}
+MathOp: a\mathop+b\mathop:c\mathop{\delta}e\mathop{\textrm{and}}f\mathrel{\mathop{:}}=g\sin h
+MathText: \frac{a}{b}\text{c~ {ab} \ e}+fg
+Mod: |
+    \begin{array}{cc}
+        a \bmod 2 & b \pod 3 \\
+        c \pmod{4} & d \mod{56} \\
+        \displaystyle a\bmod 2 & \displaystyle b \pod 3 \\
+        \displaystyle c\pmod{4} & \displaystyle d \mod{56}
+    \end{array}
+ModScript: |
+    \begin{array}{cc}
+        \scriptstyle a\bmod 2 & \scriptstyle b \pod 3 \\
+        \scriptstyle c\pmod{4} & \scriptstyle d \mod{56}
+    \end{array}
+ModSpacing: |
+    \begin{array}{l}
+        (a \cdot b) \bmod 257 \\
+        (a \cdot b) \mkern1mu\mathbin{\mathrm{mod}}\mkern1mu 257 \\
+        (a \cdot b) \mathbin{\mathrm{mod}} 257
+    \end{array}
+NegativeSpaceBetweenRel: A =\!= B
+NegativeSpace: \fbox{\$1,\!000,\!000}\KaTeX
+NestedFractions: |
+    {\Huge \frac{a}{b\frac{a}{b\frac{a}{b}}}} {\small \frac{a}{b\frac{a}{b\frac{a}{b}}}}+\frac{\frac{c}{f}}{a\frac{a}{bbbbb}bbb}
+NullDelimiterInteraction: a \bigl. + 2 \quad \left. + a \right)
+Newline: |
+    \frac{a^2+b^2}{c^2} \newline
+    \frac{a^2+b^2}{c^2} \\[1ex]
+    \begin{pmatrix}
+      a & b \\
+      c & d \cr
+    \end{pmatrix} \\
+    a+b+c+d+e+f+g
+OldFont: |
+    \begin{matrix}
+      \rm rm & it & \it it & \bf bf & \sf sf & \tt tt \\
+      \text{\rm rm} & \text{rm} & \text{\it it} & \text{\bf bf} & \text{\sf sf} & \text{\tt tt} \\
+      i\rm r\it i & \text{r\it i\rm r}
+    \end{matrix}
+OperatorName: |
+    \begin{matrix}
+        \operatorname g (z) + 5\operatorname{g}z + \operatorname{Gam-ma}(z) \\
+        \operatorname{Gam ma}(z) + \operatorname{\Gamma}(z) + \operatorname{}x
+    \end{matrix}
+OpLimits: \sum_{n} \frac{1}{n^s} = \prod_{p} {\frac{1}{1 - \frac{1}{p^s}}}
+OverUnderline: x\underline{x}\underline{\underline{x}}\underline{x_{x_{x_x}}}\underline{x^{x^{x^x}}}\overline{x}\overline{x}\overline{x^{x^{x^x}}} \blue{\overline{\underline{x}}\underline{\overline{x}}}
+OverUnderset: |
+    \begin{array}{l}
+    x\overset?=1 \quad \underset{*}{x}^2 \\
+    {\displaystyle\lim_{t\underset{>0}\to0}}\\
+    a+b+c+d\overset{b+c=0}\longrightarrow a+d\\
+    \overset { x = y } { \sqrt { a b } }
+    \end{array}
+Phantom: \dfrac{1+\phantom{x^{\blue{2}}} = x}{1+x^{\blue{2}} = x} \left(\vphantom{\int_t} zzz \right) \left( X \hphantom{\frac{\frac X X}{X}} \right)
+PrimeSpacing: f'+f_2'+f^{f'}
+PrimeSuper: x'^2+x'''^2+x'^2_3+x_3'^2
+Raisebox: \frac{a}{a\raisebox{0.5em}{b}} \cdot \frac{a\raisebox{-0.5em}{b}}{a} \cdot \sqrt{a\raisebox{0.5em}{b}} \cdot \sqrt{a\raisebox{-0.5em}{b}} \cdot \sqrt{a\raisebox{0.5em}{b}\raisebox{-0.5em}{b}}
+RelativeUnits: |
+    \begin{array}{ll}
+        a\kern1emb^{a\kern1emb^{a\kern1emb}} &
+        {\footnotesize a\kern1emb^{a\kern1emb^{a\kern1emb}}} \\
+        a\mkern18mub^{a\mkern18mub^{a\mkern18mub}} &
+    \end{array}
+SizingBaseline: |
+    '{\tiny a+b}a+b{\Huge a+b}'
+Sizing: |
+    {\Huge x}{\LARGE y}{\normalsize z}{\scriptsize w}\sqrt[\small 3]{x+1}
+Smash: \left( X^{\smash 2} \right) \sqrt{\smash[b]{y}}
+Spacing: |
+    \begin{matrix}
+        ^3+[-1][1-1]1=1(=1)\lvert a\rvert~b \\
+        \scriptstyle{^3+[-1][1-1]1=1(=1)\lvert a\rvert~b} \\
+        \scriptscriptstyle{^3+[-1][1-1]1=1(=1)\lvert a\rvert~b} \\
+    \end{matrix}
+Sqrt: |
+    \sqrt{\sqrt{\sqrt{x}}}_{\sqrt{\sqrt{x}}}^{\sqrt{\sqrt{\sqrt{x}}}
+    ^{\sqrt{\sqrt{\sqrt{x}}}}}
+SqrtRoot: |
+    1+\sqrt[3]{2}+\sqrt[1923^234]{2^{2^{2^{2^{2^{2^{2^{2^{2^{2^{2^2}}}}}}}}}}}
+StackRel: a \stackrel{?}{=} b \stackrel{\text{def}}{=} c
+StretchyAccents: |
+    \overrightarrow{AB} \quad \textcolor{green}{\overleftrightarrow{AB}}
+StretchyAccentColor: |
+    \red{\overrightarrow{AB}} \quad \color{blue}{\overleftarrow{AB}} \quad \color{blue}{\green{\Overrightarrow{AB}}}
+StyleSpacing: \scriptstyle ab\;cd
+StyleSwitching: a\cdot b\scriptstyle a\cdot ba\textstyle\cdot ba\scriptstyle\cdot b
+SupSubCharacterBox: a_2f_2{f}_2{aa}_2{af}_2\mathbf{y}_Ay_A
+SupSubHorizSpacing: |
+    x^{x^{x}}\Big|x_{x_{x_{x_{x}}}}\bigg|x^{x^{x_{x_{x_{x_{x}}}}}}\bigg|
+SupSubOffsets: \displaystyle \int_{2+3}x f^{2+3}+3\lim_{2+3+4+5}f
+Symbols1: |
+    \maltese\degree\pounds\$
+    \text{\maltese\degree\pounds\textdollar}
+Text: \frac{a}{b}\text{c~ {ab} \ e}+fg
+TextSpace:
+  \begin{array}{l}
+    \texttt{12345678901234} \\
+    \texttt{A test  1~~2\ \ 3} \\
+    \verb|A test 1  2  3|
+  \end{array}
+TextStacked:
+  \begin{matrix}
+      \textsf{abc123 \textbf{abc123} \textit{abc123}}\\
+      \text{abc123 \textbf{abc123} \textit{abc123}}\\
+      \textrm{abc123 \textbf{abc123} \textit{abc123}}\\
+      \textsf{\textrm{\textbf{abc123}} \textbf{abc123} \textit{abc123}}\\
+      \textit{abc123 \textbf{abc123} \textsf{abc123}}\\
+  \end{matrix}
+TextWithMath: |
+  \begin{matrix}
+      \text{for $a < b$ and $ c < d $}. \\
+      \textsf{for $a < b$ and $ c < d $}. \\
+      \textsf{for $a < b \textbf{ and } c < d $} \\
+      \text{\sf for $a < b$ and $c < d$.}
+  \end{matrix}
+Unicode: \begin{matrix}\text{ÀàÇçÉéÏïÖöÛû} \\ \text{БГДЖЗЙЛФЦШЫЮЯ} \\ \text{여보세요} \\ \text{私はバナナです} \end{matrix}
+Units: |
+    \begin{array}{ll}
+      \mathrm H\kern 1em\mathrm H \text{\tiny (1em)}
+      & \mathrm H\kern 1ex\mathrm H \text{\tiny (1ex)} \\
+      \mathrm H{\scriptstyle \kern 1em}\mathrm H \text{\tiny (ss 1em)}
+      & \mathrm H{\scriptstyle \kern 1ex}\mathrm H \text{\tiny (ss 1ex)} \\
+      \mathrm H{\small \kern 1em}\mathrm H \text{\tiny (sm 1em)}
+      & \mathrm H{\small \kern 1ex}\mathrm H \text{\tiny (sm 1ex)} \\
+      \mathrm H\mkern 18mu\mathrm H \text{\tiny (18mu)}
+      & \mathrm H\kern 1cm\mathrm H \text{\tiny (1cm)} \\
+      \mathrm H{\scriptstyle \mkern 18mu}\mathrm H \text{\tiny (ss 18mu)}
+      & \mathrm H{\scriptstyle \kern 1cm}\mathrm H \text{\tiny (ss 1cm)} \\
+      \mathrm H{\small \mkern 18mu}\mathrm H \text{\tiny (sm 18mu)}
+      & \mathrm H{\small \kern 1cm}\mathrm H \text{\tiny (sm 1cm)}
+    \end{array}
+Verb: |
+    \begin{array}{ll}
+      \verb \verb ,   & \verb|\verb  |, \\
+      \verb* \verb* , & \verb*|\verb* |, \\
+      \verb!<x> & </y>! & \scriptstyle\verb|ss verb| \\
+      \verb*!<x> & </y>! & \small\verb|sm verb| \\
+      \verb|``---''~|
+    \end{array}
+VerticalSpacing: x^{\Huge y}z

@@ -1,0 +1,11 @@
+reports/
+dist/
+tests_output/
+*.log
+**/.DS_Store
+node_modules/
+coverage/
+test/selenium/screenshots/local
+test/selenium/screenshots/browserstack/*/results/*
+test/selenium/screenshots/browserstack/*/diffs/*
+*.err

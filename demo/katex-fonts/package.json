@@ -1,0 +1,19 @@
+{
+  "name": "katex-fonts",
+  "version": "0.0.3",
+  "description": "fonts for KaTeX",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaTeX/katex-fonts.git",
+    "build:css": "webpack"
+  },
+  "author": "Khan Academy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaTeX/katex-fonts/issues"
+  },
+  "homepage": "https://github.com/KaTeX/katex-fonts#readme"
+}

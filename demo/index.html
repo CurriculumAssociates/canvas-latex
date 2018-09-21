@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CreateJS Latex Demo</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="demo.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet/less" type="text/css" href="katex-fonts/fonts.less" />
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+  <script src="webfontloader.js"></script>
+  <script src="canvas-latex.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <h1>LaTeX Demo!</h1>
+    <div class="row">
+      <div class="col">
+        <input class="form-control" type="text" id="input" placeholder="Enter your equation here!" />
+        <br/>
+        <canvas id="canvas" width="800" height="400"></canvas>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    <script src="demo.js"></script>
+</body>
+
+</html>

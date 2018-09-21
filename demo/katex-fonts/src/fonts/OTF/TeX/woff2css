@@ -1,0 +1,48 @@
+#! /usr/bin/perl
+
+$file = shift;
+
+die "Usage: ./woff2css woff-file\n" unless $file;
+
+use MIME::Base64;
+
+$woff = "";
+open(WOFF,"<",$file) || die "Can't read '$file': $@\n";
+while (!eof(WOFF)) {
+  read(WOFF,$buffer,4096) || die "Error reading '$file': $@\n";
+  $woff .= $buffer;
+}
+close(WOFF);
+
+$data = encode_base64($woff);
+$m = length($data);
+
+$name = $file; $name =~ s!.*/!!; $name =~ s!.woff!!;
+$family = $name; $family =~ s/-Regular//;
+$family =~ s/BoldItalic/bold-italic/;
+$family =~ s/-B/-b/; $family =~ s/-I/-i/;
+
+print "/*************************************************************\n";
+print " *\n";
+print " *  MathJax/fonts/HTML-CSS/TeX/css/$name.css\n";
+print " *  \n";
+print " *  Copyright (c) 2011 by Design Science, Inc.\n";
+print " *  Copyright (c) 2014 by Khan Academy\n";
+print " *\n";
+print " *  Licensed under the Apache License, Version 2.0 (the \"License\");\n";
+print " *  you may not use this file except in compliance with the License.\n";
+print " *  You may obtain a copy of the\n";
+print " *\n";
+print " *     http://www.apache.org/licenses/LICENSE-2.0\n";
+print " *\n";
+print " *  Unless required by applicable law or agreed to in writing, software\n";
+print " *  distributed under the License is distributed on an \"AS IS\" BASIS,\n";
+print " *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n";
+print " *  See the License for the specific language governing permissions and\n";
+print " *  limitations under the License.\n";
+print " */\n\n";
+
+print "\@font-face {\n";
+print "  font-family: '$family-Web';\n";
+print "  src: url('data:font/woff;charset=utf-8;base64,",join("",split(/\n/,$data)),"') format('woff')\n";
+print "}\n";
