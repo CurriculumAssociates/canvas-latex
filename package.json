@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "standard",
-    "build:fonts": "lessc demo/katex-fonts/fonts.less demo/fonts.css",
+    "build:fonts": "lessc demo/katex-fonts/fonts.less demo/katex-fonts/fonts.css",
     "copy-demo": "cp -a demo/ dist/",
     "prestart": "npm run copy-demo",
     "start": "webpack-dev-server --open --config webpack.dev.js",
