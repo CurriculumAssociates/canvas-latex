@@ -79,7 +79,7 @@
     "make-coverage-badge": "^1.0.1",
     "mkdirp": "^0.5.1",
     "nightwatch": "^0.9.19",
-    "resemble": "^1.4.0",
+    "node-resemble-js": "^0.2.0",
     "rimraf": "^2.6.2",
     "selenium-standalone": "^6.12.0",
     "standard": "^10.0.3",
