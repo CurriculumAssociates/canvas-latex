@@ -1,6 +1,6 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)    [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=TE1hSEtmUDhjamF2eU9udDJtOEhoSE45bHduOHExSENrbC9HVFZXb0l6dz0tLTdEdlBQWEJpSDZYd2tVMEVFRGJQZkE9PQ==--d824c4576941d98bc82a20be76335cb09d448b25)](https://www.browserstack.com/automate/public-build/TE1hSEtmUDhjamF2eU9udDJtOEhoSE45bHduOHExSENrbC9HVFZXb0l6dz0tLTdEdlBQWEJpSDZYd2tVMEVFRGJQZkE9PQ==--d824c4576941d98bc82a20be76335cb09d448b25)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Test with Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 # CanvasLatex
 
