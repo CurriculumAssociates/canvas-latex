@@ -1,4 +1,4 @@
-const resemble = require('resemble')
+const resemble = require('node-resemble-js')
 const fs = require('fs')
 const colors = require('colors')
 
@@ -20,7 +20,18 @@ exports.assertion = function (filename, environment, updateMode, browser, expect
     }
 
     resemble
-      .resemble(baselinePath)
+      .outputSettings({
+        errorColor: {
+          red: 225,
+          green: 0,
+          blue: 255
+        },
+        errorType: 'movement',
+        transparency: 0.3,
+        largeImageThreshold: 1200
+      })
+
+    resemble(baselinePath)
       .compareTo(resultPath)
       .ignoreAntialiasing()
       .onComplete(callback)  // calls this.value with the result
@@ -29,8 +40,7 @@ exports.assertion = function (filename, environment, updateMode, browser, expect
   }
 
   this.value = function (result) {
-    var diff = Buffer.from(result.getImageDataUrl().replace(/data:image\/png;base64,/, ''), 'base64')
-    fs.writeFileSync(diffPath, diff)
+    result.getDiffImage().pack().pipe(fs.createWriteStream(diffPath))
 
     return parseFloat(result.misMatchPercentage, 10)  // value this.pass is called with
   }
