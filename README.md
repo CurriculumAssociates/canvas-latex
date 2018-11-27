@@ -80,7 +80,7 @@ Since canvas doesn't load fonts automatically, you can use the `WebFontLoader`. 
 
 A suite of automated tests are run against this library during build time. Multiple browsers are tested using the BrowserStack testing platform.
 
-[![BrowserStack](Browserstack-logo.svg)](https://www.browserstack.com)
+<a href="https://www.browserstack.com"><img src="Browserstack-logo.svg" width="250"></a>
 
 ## License
 CanvasLatex is licensed under the MIT License. https://opensource.org/licenses/MIT
