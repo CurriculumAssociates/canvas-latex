@@ -76,6 +76,11 @@ CanvasLatex is written in a way which should support any Canvas based renderer. 
 #### Loading the Fonts
 Since canvas doesn't load fonts automatically, you can use the `WebFontLoader`. See `demo/demo.js` for an example. Additionally you'll need to make sure the fonts are available via the css. We leverage Katex's CSS file as it contains the fonts we need. You can use their CDN here: https://cdnjs.com/libraries/KaTeX. Or, you can include the fonts locally.
 
+## Testing
+
+A suite of automated tests are run against this library during build time. Multiple browsers are tested using the BrowserStack testing platform.
+
+[![BrowserStack](Browserstack-logo.svg)](https://www.browserstack.com)
 
 ## License
 CanvasLatex is licensed under the MIT License. https://opensource.org/licenses/MIT
