@@ -32,7 +32,8 @@
     "folder-setup": "node scripts/folder-setup.js",
     "serve": "(cd dist && python -m SimpleHTTPServer 8888) &",
     "kill-serve": "kill -9 `ps -ef |grep SimpleHTTPServer |grep 8888 |awk '{print $2}'` & exit 0",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "test": "jest"
   },
   "files": [
     "README.md",
@@ -40,6 +41,9 @@
     "dist/",
     "demo/fonts/"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/curriculumassociates/canvas-latex"

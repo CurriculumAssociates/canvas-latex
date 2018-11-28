@@ -4,4 +4,11 @@ node_js:
 script:
   - npm run lint
   - npm test
-  - npm run build
+  - npm run selenium:browserstack
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
+  on:
+    tags: true
