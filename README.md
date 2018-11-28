@@ -1,7 +1,10 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)    [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=TE1hSEtmUDhjamF2eU9udDJtOEhoSE45bHduOHExSENrbC9HVFZXb0l6dz0tLTdEdlBQWEJpSDZYd2tVMEVFRGJQZkE9PQ==--d824c4576941d98bc82a20be76335cb09d448b25)](https://www.browserstack.com/automate/public-build/TE1hSEtmUDhjamF2eU9udDJtOEhoSE45bHduOHExSENrbC9HVFZXb0l6dz0tLTdEdlBQWEJpSDZYd2tVMEVFRGJQZkE9PQ==--d824c4576941d98bc82a20be76335cb09d448b25)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Test with Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=N1pqL3FBbWpMR0pKR2t6eG9oSWtpYmJxQlQ0aU4xZ3ZzSm9GZCtEMmtEZz0tLWtqQkRJeEkvNTBQM2NOK3BrL0d4Unc9PQ==--bec098d9dd687d68da395b7ef194b3edb4cbd627)](https://www.browserstack.com/automate/public-build/N1pqL3FBbWpMR0pKR2t6eG9oSWtpYmJxQlQ0aU4xZ3ZzSm9GZCtEMmtEZz0tLWtqQkRJeEkvNTBQM2NOK3BrL0d4Unc9PQ==--bec098d9dd687d68da395b7ef194b3edb4cbd627)
+[![Build Status](https://travis-ci.org/CurriculumAssociates/canvas-latex.svg?branch=master)](https://travis-ci.org/CurriculumAssociates/canvas-latex)
+
 # CanvasLatex
 
 Bringing quick math-typesetting rendering to the canvas
