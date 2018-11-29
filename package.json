@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "standard",
     "build:fonts": "lessc demo/katex-fonts/fonts.less demo/katex-fonts/fonts.css",
-    "copy-demo": "cp -a demo/ dist/",
+    "copy-demo": "cpx \"demo/**/*\" dist",
     "prestart": "npm run copy-demo",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "clean": "rimraf node_modules/ dist/",
@@ -76,6 +76,7 @@
     "babel-preset-env": "^1.6.1",
     "browserstack-local": "^1.3.0",
     "colors": "^1.1.2",
+    "cpx": "^1.5.0",
     "deepmerge": "^2.0.1",
     "gm": "^1.23.0",
     "jest": "^23.3.0",
