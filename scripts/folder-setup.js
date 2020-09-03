@@ -21,7 +21,5 @@ const dirs = [
   'test/selenium/screenshots/browserstack/safari/results'
 ]
 dirs.forEach(function (dir) {
-  mkdirp(dir, function (err) {
-    if (err) console.error(err)
-  })
+  mkdirp.sync(dir)
 })
