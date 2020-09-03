@@ -3,6 +3,10 @@
   "version": "0.9.0",
   "description": "Enabling quick math-typesetting rendering on the canvas",
   "main": "dist/canvas-latex.js",
+  "engines": {
+    "npm": ">=6.9.0",
+    "node": ">=10.16.2"
+  },
   "module": "src/index.js",
   "directories": {
     "test": "test"
@@ -13,7 +17,7 @@
     "copy-demo": "cpx \"demo/**/*\" dist",
     "prestart": "npm run copy-demo",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "clean": "rimraf node_modules/ dist/",
+    "clean": "rm -rf node_modules/ dist/ && npm cache clean --force",
     "prebuild": "npm run copy-demo",
     "build": "webpack --config webpack.prod.js",
     "preselenium:local": "npm run install-selenium && npm run folder-setup",
@@ -80,11 +84,10 @@
     "js-yaml": "^3.10.0",
     "less": "^3.8.1",
     "make-coverage-badge": "^1.0.1",
-    "mkdirp": "^0.5.1",
-    "nightwatch": "^0.9.19",
+    "mkdirp": "^1.0.4",
+    "nightwatch": "^1.3.5",
     "node-resemble-js": "^0.2.0",
     "rimraf": "^2.6.2",
-    "selenium-standalone": "^6.12.0",
     "standard": "^10.0.3",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
@@ -94,6 +97,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "canvg-browser": "^1.0.0"
+    "canvg-browser": "^1.0.0",
+    "ps-tree": "^1.2.0"
   }
 }
