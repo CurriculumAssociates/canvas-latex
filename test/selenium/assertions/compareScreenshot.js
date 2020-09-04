@@ -9,7 +9,7 @@ exports.assertion = function (filename, environment, updateMode, browser, expect
   const diffPath = screenshotPath + `${environment}/${browser}/diffs/` + filename
 
   this.message = 'Unexpected compareScreenshot error.'
-  this.expected = expected || 0   // misMatchPercentage tolerance default 0%
+  this.expected = expected || 10   // misMatchPercentage tolerance default 2%
 
   this.command = function (callback) {
       // create new baseline photo if none exists

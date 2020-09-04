@@ -22,9 +22,8 @@
     "build": "webpack --config webpack.prod.js",
     "preselenium:local": "npm run install-selenium && npm run folder-setup",
     "selenium:local": "node selenium-local.js -c nightwatch.local.js -e firefox",
-    "preselenium:browserstack": "npm run folder-setup && npm run build && npm run serve && sleep 5s",
+    "preselenium:browserstack": "npm run folder-setup && npm run build",
     "selenium:browserstack": "node scripts/bs_runner.js -c nightwatch.browserstack.js -e chrome,firefox,edge,safari",
-    "postselenium:browserstack": "npm run kill-serve",
     "selenium:local:update": "UPDATE_MODE=true npm run selenium:local",
     "selenium:browserstack:update": "UPDATE_MODE=true npm run selenium:browserstack",
     "install-selenium": "selenium-standalone install",
@@ -34,8 +33,7 @@
     "jest:coverage": "jest --coverage",
     "postjest:coverage": "make-coverage-badge",
     "folder-setup": "node scripts/folder-setup.js",
-    "serve": "(cd dist && python -m SimpleHTTPServer 8888) &",
-    "kill-serve": "kill -9 `ps -ef |grep SimpleHTTPServer |grep 8888 |awk '{print $2}'` & exit 0",
+    "serve": "http-server ./dist/ -p 8888",
     "precommit": "npm run lint"
   },
   "files": [
@@ -79,6 +77,7 @@
     "cpx": "^1.5.0",
     "deepmerge": "^2.0.1",
     "gm": "^1.23.0",
+    "http-server": "^0.12.3",
     "jest": "^23.3.0",
     "jest-canvas-mock": "^1.1.0",
     "js-yaml": "^3.10.0",

@@ -35,25 +35,25 @@ const nightwatchConfig = {
       'desiredCapabilities': {
         'browser': 'Chrome',
         'browserName': 'chrome',
-        'browser_version': '63',
+        'browser_version': '84.0',
         'os': 'OS X',
-        'os_version': 'Sierra'
+        'os_version': 'Catalina'
       }
     },
     firefox: {
       'desiredCapabilities': {
         'browser': 'Firefox',
         'browserName': 'firefox',
-        'browser_version': '58.0 beta',
+        'browser_version': '79.0',
         'os': 'OS X',
-        'os_version': 'Sierra'
+        'os_version': 'Catalina'
       }
     },
     edge: {
       desiredCapabilities: {
         'browser': 'MicrosoftEdge',
         'browserName': 'edge',
-        'browser_version': '16.0',
+        'browser_version': '84.0',
         'os': 'Windows',
         'os_version': '10'
       }
@@ -62,9 +62,9 @@ const nightwatchConfig = {
       desiredCapabilities: {
         'browser': 'Safari',
         'browserName': 'safari',
-        'browser_version': '10.0',
+        'browser_version': '13.1',
         'os': 'OS X',
-        'os_version': 'Sierra'
+        'os_version': 'Catalina'
       }
     }
   }
