@@ -29,26 +29,15 @@ try {
     console.log('Connected. Now testing...')
     Nightwatch.cli(function (argv) {
       Nightwatch.CliRunner(argv)
-        .setup(null, function () {
+        .setup(null, () => {
           // Code to stop browserstack local after end of parallel test
-          console.log('at end 3?', bsLocal)
-          try {
-              setTimeout(() => {
-                bsLocal.stop();
-                console.log('shutting down bsLocal');
-              }, 1000);
-            // bsLocal.stop();
-            if (bsPID) process.kill(bsPID);
-          } catch (er) {
-            console.log('error at shutdown time', er);
-          }
-          if (bsPID) process.kill(bsPID);
-          
-          // if (server) server.close();
+          bsLocal.stop(() => {
+            if (server) server.close();
+            process.exit(0);
+          });
         })
         .runTests(function () {
           // Code to stop browserstack local after end of single test
-          bsLocal.stop()
         })
     })
   })
