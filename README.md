@@ -9,6 +9,7 @@ Bringing quick math-typesetting rendering to the canvas
 ![Alt Text](MathExpressions.gif)
 
 ## Try it yourself
+
 `npm install`
 
 `npm start`
