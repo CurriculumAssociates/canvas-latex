@@ -56,7 +56,7 @@ export default class VirtualContainerNode extends VirtualCanvasNode {
   }
 
   /**
-   * Gets the abolsute bounds of this node relative to (0, 0)
+   * Gets the absolute bounds of this node relative to (0, 0)
    * @return {Bounds}
    */
   getBounds () {

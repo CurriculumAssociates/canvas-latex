@@ -1,3 +1,12 @@
+AccentedI: |
+  \begin{array}{l}
+      \textsf{direct |í| encoded |\'{\i}|}\\
+      \text{direct |í| encoded |\'{\i}|}\\
+      \textsf{direct |á| encoded |á|}\\
+      \text{direct |á| encoded |á|}\\
+  \end{array}
+AccentedIMVP: |
+    \textsf{ıwíw\'{\i}wiwıá}
 AccentsText: |
     \begin{array}{l}
     \text{\'\i} & \text{\.\i} & \text{\`\i} & \text{\"\i} & \text{\H\i} & \text{\r\i} \\
@@ -6,6 +15,14 @@ AccentsText: |
     \text{\'A} & \text{\.A} & \text{\`A} & \text{\"A} & \text{\H{A}} & \text{\r{A}} \\
     \text{\.I İ} & \text{\H e e̋} & \text{\i ı}
     \end{array}
+AccentsTextSF: |
+    \begin{array}{l}
+    \textsf{|\'\i|} & \textsf{|\.\i|} & \textsf{|\`\i|} & \textsf{|\"\i|} & \textsf{|\H\i|} & \textsf{|\r\i|} & \textsf{|\'{\i}|} \\
+    \textsf{|\'\j|} & \textsf{|\.\j|} & \textsf{|\`\j|} & \textsf{|\"\j|} & \textsf{|\H\j|} & \textsf{|\r\j|} \\
+    \textsf{|\'a|} & \textsf{|\.a|} & \textsf{|\`a|} & \textsf{|\"a|} & \textsf{|\H{a}|} & \textsf{|\r{a}|} \\
+    \textsf{|\'A|} & \textsf{|\.A|} & \textsf{|\`A|} & \textsf{|\"A|} & \textsf{|\H{A}|} & \textsf{|\r{A}|} \\
+    \textsf{|\.I İ|} & \textsf{|\H e e̋|} & \textsf{|\i ı|}
+    \end{array
 Aligned: |
     \begin{aligned}
         ax+b &= 1 & 4b-6c &= 2 \\
@@ -162,6 +179,7 @@ NegativeSpace: \fbox{\$1,\!000,\!000}\KaTeX
 NestedFractions: |
     {\Huge \frac{a}{b\frac{a}{b\frac{a}{b}}}} {\small \frac{a}{b\frac{a}{b\frac{a}{b}}}}+\frac{\frac{c}{f}}{a\frac{a}{bbbbb}bbb}
 NullDelimiterInteraction: a \bigl. + 2 \quad \left. + a \right)
+NotEquals: 8\neq9
 Newline: |
     \frac{a^2+b^2}{c^2} \newline
     \frac{a^2+b^2}{c^2} \\[1ex]
@@ -268,6 +286,8 @@ Units: |
       \mathrm H{\small \mkern 18mu}\mathrm H \text{\tiny (sm 18mu)}
       & \mathrm H{\small \kern 1cm}\mathrm H \text{\tiny (sm 1cm)}
     \end{array}
+UpsideDown: |
+    \textsf{¡¿Qué, el pingüino y el colibrí} \\ \textsf{aún quieren más ñoquis?!}
 Verb: |
     \begin{array}{ll}
       \verb \verb ,   & \verb|\verb  |, \\
