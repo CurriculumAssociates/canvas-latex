@@ -11,7 +11,10 @@
   "directories": {
     "test": "test"
   },
-  "author": "",
+  "author": {
+    "name": "Curriculum Associates",
+    "email": "opensource@cainc.com"
+  },
   "scripts": {
     "lint": "standard",
     "build:fonts": "lessc demo/katex-fonts/fonts.less demo/katex-fonts/fonts.css",
@@ -69,6 +72,7 @@
     ]
   },
   "keywords": [],
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
