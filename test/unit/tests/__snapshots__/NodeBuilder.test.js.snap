@@ -3612,7 +3612,7 @@ Object {
           },
           "classes": Array [],
           "color": "black",
-          "font": "italic normal 44px KaTeX_Main",
+          "font": "italic normal 44px KaTeX_Math",
           "margin": Object {
             "left": 0,
             "right": 0,
