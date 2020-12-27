@@ -155,6 +155,23 @@ export default class VirtualNodeBuilder {
       const virtualSvg = node
       const state = this._state
       const height = (+virtualSvg.attributes.height.replace('em', '')) * this._state.em
+      if (virtualSvg.attributes.style) {
+        // for `\oiint`, the width gets specified in a style="xx.xxem" attribute
+        // however this causes it to become rendered vert small as em isn't
+        // scaled properly; we can either remove the style attribute and let
+        // the externally-set height determine the bounds, or we can scale the
+        // em similar to what is done to the height earlier in this function.
+        // We do the former, while adding a console warning in case another
+        // (unexpected) condition is encountered - in which case the developer
+        // should handle this new case accordingly.
+        if (!/^width:[+-]?(?:[0-9]*[.])?[0-9]+em$/.test(virtualSvg.attributes.style)) {
+          console.warn('Unsupported SVG node explicit style attribute', virtualSvg.attributes.style);
+        }
+        else {
+          // width will be determined by height
+          delete virtualSvg.attributes.style;
+        }
+      }
       virtualSvg.attributes.height = height
       virtualSvg.attributes.fill = this._state.color
       const svgNode = new SvgNode(virtualSvg, state.minWidth, state.classes)
