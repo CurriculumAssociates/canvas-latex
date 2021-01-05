@@ -1162,6 +1162,168 @@ Object {
 }
 `;
 
+exports[`VirtualNodeBuilder #build rootNode should build a circular svg path over double integral sign with correct style width 1`] = `
+Object {
+  "alignment": "center",
+  "bounds": Object {
+    "height": 32.515999999999984,
+    "width": 51.1116,
+    "x": 0,
+    "y": -0.04400000000001114,
+  },
+  "classes": Array [],
+  "margin": Object {
+    "left": 0,
+    "right": 0,
+  },
+  "nodes": Array [
+    Object {
+      "bounds": Object {
+        "height": 32.515999999999984,
+        "width": 51.1116,
+        "x": 0,
+        "y": -0.04400000000001114,
+      },
+      "classes": Array [],
+      "margin": Object {
+        "left": 0,
+        "right": 0,
+      },
+      "nodes": Array [
+        Object {
+          "bounds": Object {
+            "height": 0,
+            "width": 19.5558,
+            "x": 0,
+            "y": 0,
+          },
+          "classes": Array [],
+          "margin": Object {
+            "left": 0,
+            "right": 0,
+          },
+          "type": "HPaddingNode",
+        },
+        Object {
+          "alignment": null,
+          "bounds": Object {
+            "height": 32.515999999999984,
+            "width": 31.5558,
+            "x": 19.5558,
+            "y": -0.04400000000001114,
+          },
+          "classes": Array [],
+          "margin": Object {
+            "left": 0,
+            "right": 0,
+          },
+          "nodes": Array [
+            Object {
+              "bounds": Object {
+                "height": 0.04400000000001114,
+                "width": 31.5558,
+                "x": 19.5558,
+                "y": -0.04400000000001114,
+              },
+              "classes": Array [],
+              "margin": Object {
+                "left": 0,
+                "right": 0,
+              },
+              "nodes": Array [
+                Object {
+                  "bounds": Object {
+                    "height": 0,
+                    "width": 12,
+                    "x": 19.5558,
+                    "y": -0.04400000000001114,
+                  },
+                  "classes": Array [],
+                  "color": "black",
+                  "font": "normal normal 44px KaTeX_Size2",
+                  "margin": Object {
+                    "left": 0,
+                    "right": 0,
+                  },
+                  "text": "∬",
+                  "type": "TextNode",
+                },
+                Object {
+                  "bounds": Object {
+                    "height": 0,
+                    "width": 19.5558,
+                    "x": 31.5558,
+                    "y": 0,
+                  },
+                  "classes": Array [],
+                  "margin": Object {
+                    "left": 0,
+                    "right": 0,
+                  },
+                  "type": "HPaddingNode",
+                },
+              ],
+              "type": "VerticalListRow",
+            },
+            Object {
+              "bounds": Object {
+                "height": 28.996000000000002,
+                "width": 31.5558,
+                "x": 19.5558,
+                "y": 3.4759999999999707,
+              },
+              "classes": Array [],
+              "margin": Object {
+                "left": 0,
+                "right": 0,
+              },
+              "nodes": Array [
+                Object {
+                  "bounds": Object {
+                    "height": 28.996000000000002,
+                    "width": 31.5558,
+                    "x": 19.5558,
+                    "y": 3.4759999999999707,
+                  },
+                  "classes": Array [],
+                  "margin": Object {
+                    "left": 0,
+                    "right": 0,
+                  },
+                  "minWidth": 0,
+                  "type": "SvgNode",
+                  "virtualHtmlNode": e {
+                    "attributes": Object {
+                      "fill": "black",
+                      "height": 28.996000000000002,
+                      "preserveAspectRatio": "xMinYMin",
+                      "viewBox": "0 0 1472 659",
+                      "width": 31.5558,
+                    },
+                    "children": Array [
+                      e {
+                        "alternate": undefined,
+                        "pathName": "oiintSize2",
+                      },
+                    ],
+                  },
+                },
+              ],
+              "type": "VerticalListRow",
+            },
+          ],
+          "rowStart": 19.5558,
+          "type": "VerticalList",
+        },
+      ],
+      "type": "VerticalListRow",
+    },
+  ],
+  "rowStart": 0,
+  "type": "VerticalList",
+}
+`;
+
 exports[`VirtualNodeBuilder #build rootNode should build a fraction with nulldelim spacing 1`] = `
 Object {
   "alignment": "center",
