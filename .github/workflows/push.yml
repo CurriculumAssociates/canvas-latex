@@ -3,9 +3,7 @@
 
 name: Push
 
-on:
-  push:
-    types: [created]
+on: push
 
 jobs:
   build:
