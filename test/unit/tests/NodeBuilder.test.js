@@ -37,7 +37,7 @@ describe('VirtualNodeBuilder', function () {
         const root = builder.build().rootNode
         expect(root.toJSON()).toMatchSnapshot()
       })
-      it('should build a circular svg path over double integral sign with correct style width', function() {
+      it('should build a circular svg path over double integral sign with correct style width', function () {
         const builder = new VirtualNodeBuilder('\\oiint', getDefaultOptions())
         const root = builder.build().rootNode
         expect(root.toJSON()).toMatchSnapshot()
