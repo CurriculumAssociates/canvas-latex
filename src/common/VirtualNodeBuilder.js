@@ -165,11 +165,10 @@ export default class VirtualNodeBuilder {
         // (unexpected) condition is encountered - in which case the developer
         // should handle this new case accordingly.
         if (!/^width:[+-]?(?:[0-9]*[.])?[0-9]+em$/.test(virtualSvg.attributes.style)) {
-          console.warn('Unsupported SVG node explicit style attribute', virtualSvg.attributes.style);
-        }
-        else {
+          console.warn('Unsupported SVG node explicit style attribute', virtualSvg.attributes.style)
+        } else {
           // width will be determined by height
-          delete virtualSvg.attributes.style;
+          delete virtualSvg.attributes.style
         }
       }
       virtualSvg.attributes.height = height
