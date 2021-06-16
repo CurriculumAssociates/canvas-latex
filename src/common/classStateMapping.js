@@ -152,9 +152,11 @@ class ClassStateMapping {
     return state.withTextAlign('center')
   }
 
-  accent (state) {
-    return state.withTextAlign('center')
+  accent (state, node, options) {
+    const family = options.defaultSansSerifText || 'KaTeX_SansSerif'
+    return state.withTextAlign('center').withFamily(family)
   }
+
   colAlignC (state) {
     return state.withTextAlign('center')
   }

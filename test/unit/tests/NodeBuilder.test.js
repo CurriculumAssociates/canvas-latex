@@ -37,6 +37,11 @@ describe('VirtualNodeBuilder', function () {
         const root = builder.build().rootNode
         expect(root.toJSON()).toMatchSnapshot()
       })
+      it('should build a circular svg path over double integral sign with correct style width', function () {
+        const builder = new VirtualNodeBuilder('\\oiint', getDefaultOptions())
+        const root = builder.build().rootNode
+        expect(root.toJSON()).toMatchSnapshot()
+      })
       it('should build a table with vertical and horizontal separators', function () {
         const latex = '\\begin{array}{|l|c|r|} \\hline left & center & right \\\\ \\hline a & b & c \\\\ \\hline \\end{array}'
         const builder = new VirtualNodeBuilder(latex, getDefaultOptions())
