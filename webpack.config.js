@@ -8,6 +8,13 @@ module.exports = {
     library: 'CanvasLatex',
     libraryTarget: 'umd'
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'demo'),
+    },
+    compress: true,
+    port: 9000,
+  },
   module: {
     rules: [
       {
@@ -20,5 +27,7 @@ module.exports = {
         ]
       }
     ]
-  }
-}
+  },
+  plugins: [
+  ]
+};
