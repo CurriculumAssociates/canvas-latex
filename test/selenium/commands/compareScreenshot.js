@@ -31,13 +31,13 @@ CompareScreenshot.prototype.command = function (filename, bounds, expected, call
         const newWidth = value.width / ratio
         const newHeight = value.height / devicePixelRatio
         gm(resultPath)
-            .resize(newWidth, newHeight)
-            .crop(bounds.width, bounds.height, bounds.x, bounds.y)
-            .write(resultPath, function (error) {
-              if (error) throw error
-              self.api.assert.compareScreenshot(filename, environment, updateMode, browser, expected)
-              self.emit('complete')
-            })
+          .resize(newWidth, newHeight)
+          .crop(bounds.width, bounds.height, bounds.x, bounds.y)
+          .write(resultPath, function (error) {
+            if (error) throw error
+            self.api.assert.compareScreenshot(filename, environment, updateMode, browser, expected)
+            self.emit('complete')
+          })
       })
   })
 

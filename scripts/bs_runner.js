@@ -1,6 +1,6 @@
-var Nightwatch = require('nightwatch')
-var browserstack = require('browserstack-local')
-var bsLocal
+const Nightwatch = require('nightwatch')
+const browserstack = require('browserstack-local')
+let bsLocal
 
 try {
   process.mainModule.filename = './node_modules/.bin/nightwatch'
@@ -8,7 +8,7 @@ try {
   // Code to start browserstack local before start of test
   console.log('Connecting local')
   Nightwatch.bsLocal = bsLocal = new browserstack.Local()
-  bsLocal.start({ 'key': process.env.BROWSERSTACK_ACCESS_KEY || process.env.BROWSERSTACK_PSW, force: 'true' }, function (error) {
+  bsLocal.start({ key: process.env.BROWSERSTACK_ACCESS_KEY || process.env.BROWSERSTACK_PSW, force: 'true' }, function (error) {
     if (error) throw error
 
     console.log('Connected. Now testing...')

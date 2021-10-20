@@ -1,6 +1,6 @@
 {
   "name": "@curriculumassociates/canvas-latex",
-  "version": "0.9.1",
+  "version": "0.10.1",
   "description": "Enabling quick math-typesetting rendering on the canvas",
   "main": "dist/canvas-latex.js",
   "engines": {

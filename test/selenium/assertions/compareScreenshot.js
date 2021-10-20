@@ -9,10 +9,10 @@ exports.assertion = function (filename, environment, updateMode, browser, expect
   const diffPath = screenshotPath + `${environment}/${browser}/diffs/` + filename
 
   this.message = 'Unexpected compareScreenshot error.'
-  this.expected = expected || 0   // misMatchPercentage tolerance default 0%
+  this.expected = expected || 0 // misMatchPercentage tolerance default 0%
 
   this.command = function (callback) {
-      // create new baseline photo if none exists
+    // create new baseline photo if none exists
     if (!fs.existsSync(baselinePath)) {
       console.log(`${colors.yellow('WARNING:')} Baseline Photo does NOT exist.`)
       console.log('Creating Baseline Photo from Result: ' + baselinePath)
@@ -34,7 +34,7 @@ exports.assertion = function (filename, environment, updateMode, browser, expect
     resemble(baselinePath)
       .compareTo(resultPath)
       .ignoreAntialiasing()
-      .onComplete(callback)  // calls this.value with the result
+      .onComplete(callback) // calls this.value with the result
 
     return this
   }
@@ -42,7 +42,7 @@ exports.assertion = function (filename, environment, updateMode, browser, expect
   this.value = function (result) {
     result.getDiffImage().pack().pipe(fs.createWriteStream(diffPath))
 
-    return parseFloat(result.misMatchPercentage, 10)  // value this.pass is called with
+    return parseFloat(result.misMatchPercentage, 10) // value this.pass is called with
   }
 
   this.pass = function (value) {

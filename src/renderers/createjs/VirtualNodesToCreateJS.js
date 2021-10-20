@@ -75,9 +75,11 @@ function _svgNodeToCJS (node) {
     ignoreClear: true,
     ignoreMouse: true
   }
-  shape.graphics.append({exec: (ctx) => {
-    Canvg(ctx.canvas, node.virtualHtmlNode.toMarkup(), options)
-  }})
+  shape.graphics.append({
+    exec: (ctx) => {
+      Canvg(ctx.canvas, node.virtualHtmlNode.toMarkup(), options)
+    }
+  })
   shape.setBounds(0, 0, width, height)
   shape.cache(0, 0, width, height, window.devicePixelRatio)
   shape.set({ x, y: y - height })
@@ -103,9 +105,9 @@ function _boxNodeToCJS (node) {
   const borderWidth = node.borderWidth
   const graphics = shape.graphics
   graphics.beginStroke(borderColor)
-          .beginFill(bgColor)
-          .setStrokeStyle(borderWidth)
-          .drawRect(0, -height, width, height)
+    .beginFill(bgColor)
+    .setStrokeStyle(borderWidth)
+    .drawRect(0, -height, width, height)
   shape.setBounds(0, 0, width, height)
   shape.set({ x, y })
   return shape

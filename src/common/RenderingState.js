@@ -1,6 +1,6 @@
 import { VerticalList } from './virtualCanvasNodes'
 
-const SIZES = [ null, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.44, 1.728, 2.074, 2.488 ]
+const SIZES = [null, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.44, 1.728, 2.074, 2.488]
 
 export default class State {
   static defaultOptions (options) {
