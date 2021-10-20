@@ -93,13 +93,11 @@
     "nightwatch": "^0.9.19",
     "node-resemble-js": "^0.2.0",
     "ps-tree": "^1.2.0",
-    "rimraf": "^2.6.2",
     "selenium-standalone": "^6.12.0",
-    "standard": "^10.0.3",
+    "standard": "^16.0.4",
     "webpack": "^5.59.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.3.1",
-    "yamljs": "^0.3.0"
+    "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
     "canvg-browser": "^1.0.0"

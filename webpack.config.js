@@ -10,10 +10,10 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'demo'),
+      directory: path.join(__dirname, 'demo')
     },
     compress: true,
-    port: 9000,
+    port: 9000
   },
   module: {
     rules: [
@@ -30,4 +30,4 @@ module.exports = {
   },
   plugins: [
   ]
-};
+}
