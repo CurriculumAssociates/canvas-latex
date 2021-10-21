@@ -31,4 +31,8 @@ export default class StretchyNode extends VirtualCanvasNode {
   set listWidth (listWidth) {
     this.bounds.width = listWidth + this.minWidth
   }
+
+  get listWidth () {
+    return this.bounds.width
+  }
 }

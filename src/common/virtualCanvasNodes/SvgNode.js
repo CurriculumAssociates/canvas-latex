@@ -45,4 +45,8 @@ export default class SvgNode extends StretchyNode {
     this.bounds.width = listWidth
     this.virtualHtmlNode.attributes.width = listWidth
   }
+
+  get listWidth () {
+    return this.bounds.width
+  }
 }

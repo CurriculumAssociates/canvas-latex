@@ -35,13 +35,13 @@ describe('CreateJS', function () {
       expect(classB.length).toBe(1)
     })
     it('should add lines to a class', function () {
-      const latex = `\\class{a}{\\frac{a}{b}}`
+      const latex = '\\class{a}{\\frac{a}{b}}'
       const widget = new CreateJS(latex)
       const classA = widget.getObjectsByClass('a')
       expect(classA.length).toBe(3)
     })
     it('should add svgs to a class', function () {
-      const latex = `\\class{a}{\\sqrt{a}}`
+      const latex = '\\class{a}{\\sqrt{a}}'
       const widget = new CreateJS(latex)
       const classA = widget.getObjectsByClass('a')
       expect(classA.length).toBe(2)
@@ -55,7 +55,7 @@ describe('CreateJS', function () {
   })
   describe('#getObjectsByClassSeparated', function () {
     it('should contain separate indexes for separate instance of the same class', function () {
-      const latex = `\\class{a}{bc} + \\class{a}{def}`
+      const latex = '\\class{a}{bc} + \\class{a}{def}'
       const widget = new CreateJS(latex)
       const classA = widget.getObjectsByClassSeparated('a')
       expect(classA.length).toBe(2)
@@ -65,7 +65,7 @@ describe('CreateJS', function () {
       expect(part2.length).toBe(3)
     })
     it('should contain one index for one instance of a class', function () {
-      const latex = `\\class{a}{bcd}`
+      const latex = '\\class{a}{bcd}'
       const widget = new CreateJS(latex)
       const classA = widget.getObjectsByClassSeparated('a')
       expect(classA.length).toBe(1)

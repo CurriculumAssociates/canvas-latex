@@ -232,6 +232,7 @@ class ClassStateMapping {
   size9 (state) {
     return withSize(state, 9)
   }
+
   size10 (state) {
     return withSize(state, 10)
   }
@@ -332,6 +333,7 @@ class ClassStateMapping {
       .withVariant('normal')
       .withFamily('Katex_Main')
   }
+
   mainit (state) {
     return state.withVariant('italic')
       .withFamily('KaTeX_Main')

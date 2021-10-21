@@ -14,21 +14,26 @@ function createCJSMock () {
     beginStroke () {
       return this
     }
+
     beginFill () {
       return this
     }
+
     setStrokeStyle () {
       return this
     }
+
     drawRect () {
       return this
     }
+
     append () {}
   }
   class ShapeMock {
     constructor () {
       this.graphics = new GraphicsMock()
     }
+
     set () {}
     setBounds () {}
     cache () {}
@@ -61,15 +66,19 @@ function pixiJSMock () {
     lineStyle () {
       return this
     }
+
     beginFill () {
       return this
     }
+
     setStrokeStyle () {
       return this
     }
+
     drawRect () {
       return this
     }
+
     append () {}
   }
   class EventEmitterMock {
