@@ -7,7 +7,7 @@ try {
   console.log('Connecting local')
   Nightwatch.bsLocal = bsLocal = new browserstack.Local()
   if (bsLocal.isRunning()) {
-    bsLocal.stop();
+    bsLocal.stop()
   }
   bsLocal.start({ key: process.env.BROWSERSTACK_ACCESS_KEY || process.env.BROWSERSTACK_PSW, force: 'true' }, function (error) {
     if (error) throw error
@@ -29,7 +29,7 @@ try {
   console.log('There was an error while starting the test runner:\n\n')
   process.stderr.write(ex.stack + '\n')
   if (bsLocal) {
-    bsLocal.stop();
+    bsLocal.stop()
   }
   process.exit(2)
 }

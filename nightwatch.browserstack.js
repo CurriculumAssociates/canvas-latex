@@ -33,46 +33,46 @@ const nightwatchConfig = {
   test_settings: {
     chrome: {
       desiredCapabilities: {
-        "os": "OS X",
-        "os_version": "Monterey",
-        "browser": "chrome",
-        "browserName": "chrome",
-        "device": null,
-        "browser_version": "98.0",
-        "real_mobile": null
+        os: 'OS X',
+        os_version: 'Monterey',
+        browser: 'chrome',
+        browserName: 'chrome',
+        device: null,
+        browser_version: '98.0',
+        real_mobile: null
       }
     },
     firefox: {
       desiredCapabilities: {
-        "os": "OS X",
-        "os_version": "Monterey",
-        "browser": "firefox",
-        "browserName": "firefox",
-        "device": null,
-        "browser_version": "97.0",
-        "real_mobile": null
+        os: 'OS X',
+        os_version: 'Monterey',
+        browser: 'firefox',
+        browserName: 'firefox',
+        device: null,
+        browser_version: '97.0',
+        real_mobile: null
       }
     },
     edge: {
       desiredCapabilities: {
-        "os": "Windows",
-        "os_version": "11",
-        "browser": "edge",
-        "browserName": "edge",
-        "device": null,
-        "browser_version": "97.0",
-        "real_mobile": null
+        os: 'Windows',
+        os_version: '11',
+        browser: 'edge',
+        browserName: 'edge',
+        device: null,
+        browser_version: '97.0',
+        real_mobile: null
       }
     },
     safari: {
       desiredCapabilities: {
-        "os": "OS X",
-        "os_version": "Big Sur",
-        "browser": "safari",
-        "browserName": "safari",
-        "device": null,
-        "browser_version": "14.1",
-        "real_mobile": null
+        os: 'OS X',
+        os_version: 'Big Sur',
+        browser: 'safari',
+        browserName: 'safari',
+        device: null,
+        browser_version: '14.1',
+        real_mobile: null
       }
     }
   }
