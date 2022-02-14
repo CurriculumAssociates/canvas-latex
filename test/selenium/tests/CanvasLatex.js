@@ -2,7 +2,7 @@ const yaml = require('js-yaml')
 const fs = require('fs')
 const config = fs.readFileSync(require.resolve('../expressions.yml'))
 
-const data = yaml.safeLoad(config)
+const data = yaml.load(config)
 
 module.exports = {
   'Expressions Test': function (browser) {
