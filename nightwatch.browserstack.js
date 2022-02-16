@@ -3,6 +3,7 @@ const merge = require('deepmerge')
 const commonTestSettings = {
   launch_url: 'http://localhost:8888',
   silent: true,
+  live_output: true,
   desiredCapabilities: {
     project: 'CanvasLatex',
     build: process.env.BUILD_NAME || 'CanvasLatex - ' + process.env.USER,
