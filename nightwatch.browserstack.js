@@ -3,6 +3,7 @@ const merge = require('deepmerge')
 const commonTestSettings = {
   launch_url: 'http://localhost:8888',
   silent: true,
+  live_output: true,
   desiredCapabilities: {
     project: 'CanvasLatex',
     build: process.env.BUILD_NAME || 'CanvasLatex - ' + process.env.USER,
@@ -27,44 +28,52 @@ const nightwatchConfig = {
   selenium: {
     start_process: false,
     host: 'hub-cloud.browserstack.com',
-    port: 80
+    port: 443
   },
 
   test_settings: {
     chrome: {
       desiredCapabilities: {
-        browser: 'Chrome',
-        browserName: 'chrome',
-        browser_version: '63',
         os: 'OS X',
-        os_version: 'Sierra'
+        os_version: 'Monterey',
+        browser: 'chrome',
+        browserName: 'chrome',
+        device: null,
+        browser_version: '98.0',
+        real_mobile: null
       }
     },
     firefox: {
       desiredCapabilities: {
-        browser: 'Firefox',
-        browserName: 'firefox',
-        browser_version: '58.0 beta',
         os: 'OS X',
-        os_version: 'Sierra'
+        os_version: 'Monterey',
+        browser: 'firefox',
+        browserName: 'firefox',
+        device: null,
+        browser_version: '97.0',
+        real_mobile: null
       }
     },
     edge: {
       desiredCapabilities: {
-        browser: 'MicrosoftEdge',
-        browserName: 'edge',
-        browser_version: '16.0',
         os: 'Windows',
-        os_version: '10'
+        os_version: '11',
+        browser: 'edge',
+        browserName: 'edge',
+        device: null,
+        browser_version: '97.0',
+        real_mobile: null
       }
     },
     safari: {
       desiredCapabilities: {
-        browser: 'Safari',
-        browserName: 'safari',
-        browser_version: '10.0',
         os: 'OS X',
-        os_version: 'Sierra'
+        os_version: 'Big Sur',
+        browser: 'safari',
+        browserName: 'safari',
+        device: null,
+        browser_version: '14.1',
+        real_mobile: null
       }
     }
   }

@@ -12,5 +12,6 @@ module.exports = {
     'src/**',
     '!src/index.js',
     '!src/common/katex.min.js'
-  ]
+  ],
+  testEnvironment: 'jsdom'
 }
