@@ -1,5 +1,5 @@
 import VirtualNodeBuilder from '../../common/VirtualNodeBuilder'
-import { convertAndGetClasses } from './VirtualNodesToPixiJS'
+import { makePixiConverter } from './VirtualNodesToPixiJS'
 
 // events that fire before rendering and after rendering
 // NOTE: because this._render() is called in the constructor, the first firing of these events
@@ -10,6 +10,7 @@ export const EVENTS = {
 }
 
 export function registerPixiJS(PIXI){
+    const convertAndGetClasses = makePixiConverter(PIXI);
     return class PixiJS extends PIXI.Container {
     /**
      * Constructor
