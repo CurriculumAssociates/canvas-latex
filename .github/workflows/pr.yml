@@ -1,8 +1,12 @@
 name: Node Continuous Integration
 
 on:
+  push:
+    branches:
+      - '**'        # matches every branch
   pull_request:
-    branches: [ master ]
+    branches:
+      - '**'        # matches every branch
 
 
 jobs:
@@ -15,4 +19,5 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
+      - run: npm run lint
       - run: npm run build
