@@ -1,6 +1,6 @@
 # CanvasLatex
 
-Bringing quick math-typesetting rendering to the canvas!!!!
+Bringing quick math-typesetting rendering to the canvas
 
 ![Alt Text](MathExpressions.gif)
 
