@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  test_pull_request:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
