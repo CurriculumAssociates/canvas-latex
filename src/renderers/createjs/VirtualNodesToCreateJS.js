@@ -1,5 +1,5 @@
 // TODO move off of Canvg in favor of Path2D
-import Canvg from 'canvg-browser'
+import { Canvg } from 'canvg'
 import { ContainerNode } from '../../common/virtualCanvasNodes'
 
 // Converts all virtual nodes to createjs DisplayObject's, adds them to the given
