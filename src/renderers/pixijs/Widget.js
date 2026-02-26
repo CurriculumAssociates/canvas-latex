@@ -28,7 +28,7 @@ export default class PixiJS extends PIXI.Container {
     this._classes = {}
 
     this._options = options
-    this._render()
+    this._updateLatex()
   }
 
   /**
@@ -79,7 +79,7 @@ export default class PixiJS extends PIXI.Container {
   set latex (latex = '') {
     this.removeChildren()
     this._latex = latex
-    this._render()
+    this._updateLatex()
   }
 
   /**
@@ -126,7 +126,7 @@ export default class PixiJS extends PIXI.Container {
    * -------------------------------------------
    */
 
-  _render () {
+   _updateLatex () {
     this._eventEmitter.emit(EVENTS.PRE_RENDER)
     const nodeBuilder = new VirtualNodeBuilder(this._latex, this._options)
     const nodeData = nodeBuilder.build()
